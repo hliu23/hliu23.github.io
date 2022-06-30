@@ -1,0 +1,16 @@
+body {
+  --branch-height: 626px;
+  --branch-width: 1146px;
+}
+div#bg-1-1 {
+  background: url("../media/branch.png");
+  top: 0px;
+  left: -168px; 
+  height: var(--branch-height);
+  width: var(--branch-width);
+}
+
+div#bg-2-1 {
+  top: 100px;
+  left: 900px;
+}

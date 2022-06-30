@@ -1,0 +1,11 @@
+body {
+  height: 1173px; 
+}
+
+div#bg-1-1 {
+  background: url("../media/trunk.png");
+  top: 0;
+  left: 0;
+  height: 1173px;
+  width: 275px;
+}

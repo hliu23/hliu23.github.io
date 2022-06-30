@@ -13,5 +13,6 @@
 - https://medialoot.com/blog/design-your-own-polygon-art/
 - https://greensock.com/get-started/
 - https://greensock.com/docs/v3/Plugins/ScrollTrigger
+- https://greensock.com/docs/v3/GSAP/gsap.to()
 - https://codepen.io/GreenSock/pen/vYNNvMj
 - https://www.srihash.org/
