@@ -1,5 +1,7 @@
 :root {
   --background-color: #FFF175;
+  --default-screen-width: 1526px;
+  --default-screen-height: 718px;
 }
 
 body {

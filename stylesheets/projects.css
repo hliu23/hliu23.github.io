@@ -1,16 +1,38 @@
 body {
   --branch-height: 626px;
   --branch-width: 1146px;
+  --num-of-projects: 4;
+  --initial-offset: 100px;
+  --left-offset: 900px;
+  height: calc(var(--num-of-projects) * var(--default-screen-height))
 }
+
 div#bg-1-1 {
   background: url("../media/branch.png");
   top: 0px;
-  left: -168px; 
+  left: calc(600px - calc(var(--default-screen-width) / 2) - 5px);
   height: var(--branch-height);
   width: var(--branch-width);
 }
 
+
 div#bg-2-1 {
-  top: 100px;
-  left: 900px;
+  top: var(--initial-offset);
+  left: var(--left-offset);
 }
+
+div#bg-2-2 {
+  top: calc(var(--initial-offset) + var(--default-screen-height));
+  left: var(--left-offset);
+}
+
+div#bg-2-3 {
+  top: calc(var(--initial-offset) + calc(2 * var(--default-screen-height)));
+  left: var(--left-offset);
+}
+
+div#bg-2-4 {
+  top: calc(var(--initial-offset) + calc(3 * var(--default-screen-height)));
+  left: var(--left-offset);
+}
+
