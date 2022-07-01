@@ -10,10 +10,15 @@ body {
 div#bg-1-1 {
   background: url("../media/branch.png");
   top: 0px;
-  left: calc(600px - calc(var(--default-screen-width) / 2) - 5px);
+  left: calc(600px - calc(var(--default-screen-width) / 2));
   height: var(--branch-height);
   width: var(--branch-width);
 }
+
+/* div#bg-1-2 {
+  top: 550px;
+  left: -50px;
+} */
 
 
 div#bg-2-1 {

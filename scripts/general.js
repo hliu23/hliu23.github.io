@@ -2,12 +2,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".parallex-bg", {
   scrollTrigger: {
-    scrub: true
+    scrub: true,
+    // pin: true
   },
+  // y: (index, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
   y: (index, target) => {
-    res = -ScrollTrigger.maxScroll(window) * target.dataset.speed;
-    console.log(res);
-    return res;
+    console.log(-ScrollTrigger.maxScroll(window));
+    return -ScrollTrigger.maxScroll(window) * target.dataset.speed;
   },
   ease: "none", 
 });

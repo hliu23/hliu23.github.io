@@ -1,0 +1,13 @@
+body {
+  --roots-height: 343px;
+  --roots-width: 844px;
+  height: 1000px;
+}
+
+div#bg-1-1 {
+  background: url("../media/roots.png");
+  top: 0px;
+  left: calc(600px - calc(var(--default-screen-width) / 2));
+  height: var(--roots-height);
+  width: var(--roots-width);
+}
