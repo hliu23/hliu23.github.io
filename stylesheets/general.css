@@ -1,5 +1,5 @@
 :root {
-  --background-color: #FFF175;
+  --background-color: #FFF59F;
   --default-screen-width: 1526px;
   --default-screen-height: 718px;
 }
@@ -34,9 +34,10 @@ div.parallex-bg div {
 }
 
 .nav-bar {
-  top: 530px;
-  left: -90px;
+  top: 50px;
+  left: -100px;
   font-family: "Montserrat", sans-serif;
+  z-index: 2;
 }
 
 .nav-bar ul {
@@ -56,8 +57,24 @@ div.parallex-bg div {
   padding: 1px;
 }
 
-
-
 .nav-bar ul li a:link, .nav-bar ul li a:visited {
   color: #000;
 }
+
+/* objects */
+
+div.project-name {
+  font-family: "Montserrat", sans-serif;
+}
+
+div.project-img {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+}
+
+div.project-img img {
+  height: 100%;
+} 

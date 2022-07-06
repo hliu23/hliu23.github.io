@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to(".parallex-bg", {
   scrollTrigger: {
     scrub: true,
+    snap: 1/4
     // pin: true
   },
   // y: (index, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,

@@ -5,7 +5,7 @@ body {
 div#bg-1-2 {
   background: url("../media/trunk.png");
   top: 0;
-  left: 0;
+  left: 100px;
   height: 1173px;
   width: 275px;
 }

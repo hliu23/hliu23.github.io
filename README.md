@@ -16,3 +16,4 @@
 - https://greensock.com/docs/v3/GSAP/gsap.to()
 - https://codepen.io/GreenSock/pen/vYNNvMj
 - https://www.srihash.org/
+- https://www.w3schools.com/css/css_navbar.asp
