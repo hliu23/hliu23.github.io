@@ -1,5 +1,5 @@
 $(function() {
-  startFrom("div#bg-1-2", 0);
+  // startFrom("div#bg-1-2", 0);
   // let projectNum = 4;
   // let height = $(window).height();
   // $(body).css("height", projectNum * height);

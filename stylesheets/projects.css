@@ -2,22 +2,28 @@ body {
   --branch-height: 637px;
   --branch-width: 1146px;
   --num-of-projects: 4;
-  --initial-offset: 30vh;
-  --left-offset: 800px;
+  --initial-offset: 30%;
+  --left-offset: 60%;
   height: calc(var(--num-of-projects) * var(--default-screen-height))
 }
 
-div#bg-1-2 {
-  background: url("../media/branch/branch.png");
-  top: 0px;
-  left: calc(600px - calc(var(--default-screen-width) / 2));
+div#bg-1-1 {
+  background: url("../media/branch/branch-5.png");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
   height: var(--branch-height);
   width: var(--branch-width);
+  /* width:  */
+  /* max-width: 100%;
+  max-height: 100%; */
+
 }
 
 div#bg-2-1 {
-  top: 100px;
-  left: 500px;
+  top: 10%;
+  left: 45%;
+  width: 17%;
 }
 
 
@@ -40,3 +46,21 @@ div#bg-2-4 {
   top: calc(var(--initial-offset) + calc(3 * var(--default-screen-height)));
   left: var(--left-offset);
 }
+
+
+div.project-name {
+  font-family: "Montserrat", sans-serif;
+}
+
+div.project-img {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 50%;
+  /* width: 15vh; */
+  text-align: center;
+  
+}
+
+div.project-img img {
+  height: 100%;
+} 

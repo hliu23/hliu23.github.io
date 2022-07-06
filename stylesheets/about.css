@@ -4,7 +4,7 @@ body {
   height: 1000px;
 }
 
-div#bg-1-2 {
+div#bg-1-1 {
   background: url("../media/roots.png");
   top: 0px;
   left: calc(600px - calc(var(--default-screen-width) / 2));

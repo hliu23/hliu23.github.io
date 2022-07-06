@@ -10,10 +10,11 @@ body {
 
 div.parallex-bg {
   position: fixed;
-  width: 1200px;
+  width: 100%;
+  height: 100%;
   top: 0;
-  left: 50%;
-  margin-left: -600px;
+  left: 0;
+  margin: -8px;
 }
 
 /* background elements */
@@ -25,6 +26,10 @@ div#parallex-bg-1 {
 div#parallex-bg-2 {
   z-index: 2;
 }
+/* nav bar */
+div#parallex-bg-3 {
+  z-index: 3;
+}
 
 div.parallex-bg div {
   background-repeat: no-repeat;
@@ -34,10 +39,10 @@ div.parallex-bg div {
 }
 
 .nav-bar {
-  top: 50px;
-  left: -100px;
+  top: 10%;
+  left: 5%;
   font-family: "Montserrat", sans-serif;
-  z-index: 2;
+  z-index: 10;
 }
 
 .nav-bar ul {
@@ -60,21 +65,3 @@ div.parallex-bg div {
 .nav-bar ul li a:link, .nav-bar ul li a:visited {
   color: #000;
 }
-
-/* objects */
-
-div.project-name {
-  font-family: "Montserrat", sans-serif;
-}
-
-div.project-img {
-  background-color: #ffffff;
-  border-radius: 50%;
-  height: 400px;
-  width: 400px;
-  text-align: center;
-}
-
-div.project-img img {
-  height: 100%;
-} 
