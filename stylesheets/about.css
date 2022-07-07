@@ -30,9 +30,11 @@ div#bg-2-1 {
 div.intro {
   font-family: "Montserrat", sans-serif; 
   width: 25vw;
+  font-size: 1.3vw;
 }
 
 div#bg-2-2 {
+  top: 15vh;
   right: 5vw;
 }
 
