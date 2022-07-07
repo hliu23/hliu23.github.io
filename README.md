@@ -13,6 +13,7 @@
   - [Google Apps Script logo](https://commons.wikimedia.org/wiki/File:Google_Apps_Script.png)
   - [Racket logo](https://users.cs.northwestern.edu/~robby/logos/)
   - [CSS and HTML logo](https://commons.wikimedia.org/wiki/File:CSS3_and_HTML5_logos_and_wordmarks.svg)
+  - [VLC logo](https://commons.wikimedia.org/wiki/File:VLC_Icon.svg)
 - Experiences Page
   - Low poly trunk (background)
     - Original photo by [Victoria Palacios](https://unsplash.com/@toriamia) on [Unsplash](https://unsplash.com/photos/dfo06_DqxpA)
@@ -21,6 +22,8 @@
   - Low poly roots (background)
     - Original photo by [Ricardo Gomez Angel](https://unsplash.com/@rgaleriacom) on [Unsplash](https://unsplash.com/photos/cX4O-vx1PXE)
     - Modified by Hechen Liu
+  - [Linkedin Logo](https://en.wikipedia.org/wiki/File:Linkedin_icon.svg)
+  - [Github Logo](https://en.wikipedia.org/wiki/File:Octicons-mark-github.svg)
 
   
 
@@ -31,3 +34,4 @@
 - https://greensock.com/docs/v3/GSAP/gsap.to()
 - https://codepen.io/GreenSock/pen/vYNNvMj
 - https://www.w3schools.com/css/css_navbar.asp
+- https://stackoverflow.com/questions/2435751/jquery-fade-element-does-not-show-elements-styled-visibility-hidden

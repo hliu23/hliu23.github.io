@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <title>Portfolio | Hechen Liu</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha384-GiboNv2SbewwOkyAS5NwCD470VSAISOSIKPiqG89GSZxelKuXje4U0CYuVEGbA8q" crossorigin="anonymous"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha384-WK0tSjEJotOWuQ2Mn5wtO4W1qyxQcHHRML2UaZtDcnjLqIZDvMQDUxF4dSaVjQG7" crossorigin="anonymous"></script>
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="stylesheets/general.css">
-    <link rel="stylesheet" href="stylesheets/about.css">
+<head>
+  <title>About | Hechen Liu</title>
+  <link rel="icon" href="./media/icon.svg">
 
-    <script defer src="scripts/general.js"></script>
-    <!-- <script defer src="scripts/projects.js"></script> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
 
-  </head>
-  <body>
-    <!-- background elements -->
-    <div id="parallex-bg-1" class="parallex-bg" data-speed="0">
-      
-      <div id="bg-1-1"></div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha384-GiboNv2SbewwOkyAS5NwCD470VSAISOSIKPiqG89GSZxelKuXje4U0CYuVEGbA8q"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+    integrity="sha384-WK0tSjEJotOWuQ2Mn5wtO4W1qyxQcHHRML2UaZtDcnjLqIZDvMQDUxF4dSaVjQG7"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="stylesheets/general.css">
+  <link rel="stylesheet" href="stylesheets/about.css">
+
+  <script defer src="scripts/general.js"></script>
+  <!-- <script defer src="scripts/projects.js"></script> -->
+
+</head>
+
+<body>
+  <div id="bg-3-1" class="nav-bar">
+    <ul>
+      <li><a href="/">Projects</a></li>
+      <li><a href="./experiences.html">Experiences</a></li>
+      <li class="active"><a href="./about.html">About</a></li>
+    </ul>
+  </div>
+  <!-- background elements -->
+  <div id="parallex-bg-1" class="parallex-bg" data-speed="0">
+    <div id="bg-1-1" class="background"></div>
+  </div>
+  <!-- elements -->
+  <div id="parallex-bg-2" class="parallex-bg" data-speed="1">
+    <div id="bg-2-1" class="profile">
+      <img src="./media/about/profile.jpg">
     </div>
-    <!-- elements -->
-    <div id="parallex-bg-2" class="parallex-bg" data-speed="1">
-      <!-- <div id="bg-2-1" class="projects circle">test</div>
-      <div id="bg-2-2" class="projects circle"></div>
-      <div id="bg-2-3" class="projects circle">test</div>
-      <div id="bg-2-4" class="projects circle">test</div> -->
+    <div id="bg-2-2" class="intro">
+      <ul>
+        <li><strong>Hechen Liu (Meimei)</strong></li>
+        <li>Rising senior at Brebeuf Jesuit Preparatory School in Indianapolis, IN</li>
+        <li>Aspiring to work in Cybersecurity or Software Development one day</li>
+        <li>Familiar with:
+          <ul>
+            <li>HTML, CSS, JS & JQuery</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Google Apps Script</li>
+            <li>Bootstrap</li>
+            <li>Handlebars</li>
+          </ul>
+        </li>
+        <li>Somewhat familiar with:
+          <ul>
+            <li>Java</li>
+            <li>Racket</li>
+            <li>PowerShell</li>
+            <li>Node.js</li>
+            <li>GSAP</li>
+            <li>...</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="bg-2-3" class="external-link">
+      <a href="https://www.linkedin.com/in/hechen-liu/">
+        <img src="./media/about/linkedin.png">
+      </a>
+    </div>
+    <div id="bg-2-4" class="external-link">
+      <a href="https://github.com/hliu23">
+        <img src="./media/about/github.png">
+      </a>
+    </div>
+    <div id="bg-2-5" class="about-site">
+      <ul>
+        <li>See the <a href="./README.md">README</a> for credits and references</li>
+        <li>Built with HTML, CSS, JS, JQuery, and GSAP</li>
+        <li><a href="mailto:codingchallenge4@gmail.com?subject='Feedback on Website'">Email me</a> if you have
+          questions, concerns, comments, or statements of outrage!</li>
+      </ul>
+    </div>
+  </div>
+</body>
 
-    </div>
-    <div id="parallex-bg-3" class="parallex-bg" data-speed="0">
-      <div id="bg-3-1" class="nav-bar">
-        <ul>
-          <li><a href="/">Projects</a></li>
-          <li><a href="./experiences.html">Experiences</a></li>
-          <li class="active"><a href="./about.html">About</a></li>
-        </ul>
-      </div>
-    </div>
-    
-  </body>
 </html>

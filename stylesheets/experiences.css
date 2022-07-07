@@ -1,11 +1,84 @@
 body {
-  height: 1173px; 
+  /* 
+  --trunk-width: 278px; */
+  --trunk-width: 18.22vw;
+  --trunk-height: calc(var(--trunk-width) * 7.194244);
+  --left-edge: calc(57vw - calc(var(--trunk-width) / 2));
+  --right-edge: calc(57vw + calc(var(--trunk-width) / 2));
+  height: var(--trunk-height);
 }
 
 div#bg-1-1 {
   background: url("../media/trunk.png");
   top: 0;
-  left: 100px;
-  height: 1173px;
-  width: 275px;
+  left: var(--left-edge);
+  height: var(--trunk-height);
+  width: var(--trunk-width);
+  background-size: contain;
+}
+
+div#parallex-bg-2 div.board {
+  --board-width: 27vw;
+  --board-height: calc(0.692063 * var(--board-width));
+  --offset: calc(var(--board-height) + 10vh);
+  --initial: 10vh;
+
+  background: url("../media/board.png");
+  background-size: contain;
+  height: var(--board-height);
+  width: var(--board-width);
+  display: block;
+  border-radius: 3%;
+
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+div#parallex-bg-2 div.board h2.exp-name {
+  font-size: 2.4vw;
+  margin-top: 25%;
+  margin-bottom: 0;
+  padding: 0 5%;
+}
+
+div#parallex-bg-2 div.board span.exp-date {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+div#parallex-bg-2 div.board div.exp-desc {
+  visibility: hidden;
+  padding: 4vw 3vw;
+  padding-left: 1vw;
+  text-align: left;
+}
+
+div#parallex-bg-2 div.board.left {
+  left: calc(var(--left-edge) - var(--board-width));
+}
+
+div#parallex-bg-2 div.board.right {
+  left: calc(var(--right-edge));
+}
+
+div#bg-2-1 {
+  top: var(--initial);
+}
+
+div#bg-2-2 {
+  top: calc(var(--initial) + var(--offset));
+}
+
+div#bg-2-3 {
+  top: calc(var(--initial) + calc(2 * var(--offset)));
+}
+
+div#bg-2-4 {
+  top: calc(var(--initial) + calc(3 * var(--offset)));
+}
+
+div#bg-2-5 {
+  top: calc(var(--initial) + calc(4 * var(--offset)));
 }

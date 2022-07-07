@@ -2,10 +2,11 @@
 <html lang="en-US">
   <head>
     <title>Experiences | Hechen Liu</title>
+    <link rel="icon" href="./media/icon.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha384-GiboNv2SbewwOkyAS5NwCD470VSAISOSIKPiqG89GSZxelKuXje4U0CYuVEGbA8q" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha384-WK0tSjEJotOWuQ2Mn5wtO4W1qyxQcHHRML2UaZtDcnjLqIZDvMQDUxF4dSaVjQG7" crossorigin="anonymous"></script>
@@ -18,22 +19,72 @@
     <script defer src="scripts/experiences.js"></script>
   </head>
   <body>
-    <div id="parallex-bg-1" class="parallex-bg" data-speed=".25">
-      <div id="bg-1-2"></div>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="/">Projects</a></li>
+        <li class="active"><a href="./experiences.html">Experiences</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </div>
+    <div id="parallex-bg-1" class="parallex-bg" data-speed=".1">
+      <div id="bg-1-1" class="background"></div>
     </div>
     <!-- elements -->
-    <div id="parallex-bg-2" class="parallex-bg" data-speed=".4">
-      <!-- <div id="bg-2-1" class="circle">test</div> -->
-      <div id="bg-2-2"></div>
-    </div>
-    <div id="parallex-bg-3" class="parallex-bg" data-speed="0">
-      <div id="bg-3-1" class="nav-bar">
-        <ul>
-          <li><a href="/">Projects</a></li>
-          <li class="active"><a href="./experiences.html">Experiences</a></li>
-          <li><a href="./about.html">About</a></li>
-        </ul>
+    <div id="parallex-bg-2" class="parallex-bg" data-speed=".9">
+      <div id="bg-2-1" class="board right">
+        <h2 class="exp-name">TED Translator</h2>
+        <span class="exp-date">Winter 2020</span>
+        <div class="exp-desc">
+          <ul>
+            <li>Translated TED Talks from English to Simplified Chinese and vice versa</li>
+            <li>Transcribed English TED Talks with the Amara subtitling platform</li>
+          </ul>
+        </div>
       </div>
+      <div id="bg-2-2" class="board left">
+        <h2 class="exp-name">Brebeuf<br>Coding Club</h2>
+        <span class="exp-date">Fall 2021 - Present</span>
+        <div class="exp-desc">
+          <ul>
+            <li>Co-founded the club in 2021</li>
+            <li>Led weekly meetings to learn coding</li>
+            <li>Collaborated to build projects including websites, applications, and algorithms</li>
+            <li>Coordinated to promote the club within the school</li>
+          </ul>
+        </div>
+      </div>
+      <div id="bg-2-3" class="board right">
+        <h2 class="exp-name">Volunteer</h2>
+        <span class="exp-date">Fall 2021 - Spring 2022</span>
+        <div class="exp-desc">
+          <ul>
+            <li>Completed forty hours of community service at Circle City Relief and St. Vincent de Paul Food Pantry</li>
+            <li>Worked together to prepare and distribute food to the local neighborhood</li>
+          </ul>
+        </div>
+      </div>
+      <div id="bg-2-4" class="board left">
+        <h2 class="exp-name">Nextech<br>Techquity Council</h2>
+        <span class="exp-date">Fall 2021 - Spring 2022</span>
+        <div class="exp-desc">
+          <ul>
+            <li>Attended monthly meetings with teachers and students from different backgrounds across Indiana</li>
+            <li>Provided feedback on aspects related to equity</li>
+          </ul>
+        </div>
+      </div>
+      <div id="bg-2-5" class="board right">
+        <h2 class="exp-name">Nextech Catapult</h2>
+        <span class="exp-date">Summer 2022</span>
+        <div class="exp-desc">
+          <ul>
+            <li>Participated in technical workshops</li>
+            <li>Built personal portfolio</li>
+            <li>Visited companies and attended speaker sessions to learn about the tech industry</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>

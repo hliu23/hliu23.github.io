@@ -1,66 +1,133 @@
 body {
-  --branch-height: 637px;
-  --branch-width: 1146px;
-  --num-of-projects: 4;
-  --initial-offset: 30%;
-  --left-offset: 60%;
-  height: calc(var(--num-of-projects) * var(--default-screen-height))
+  /* --branch-width: 1146px;
+  --branch-height: 637px; */
+  --branch-width: 75vw;
+  --num-of-projects: 5;
+  height: calc(100vh * var(--num-of-projects));
 }
 
 div#bg-1-1 {
   background: url("../media/branch/branch-5.png");
   background-repeat: no-repeat;
+  background-size: contain;
   top: 0;
   left: 0;
-  height: var(--branch-height);
+  height: calc(0.555846 * var(--branch-width));
   width: var(--branch-width);
-  /* width:  */
-  /* max-width: 100%;
-  max-height: 100%; */
+}
 
+div#parallex-bg-2 {
+  --img-top: 30vh;
+  --img-left: 60vw;
+  --name-top: 9vh;
+  --name-left: 44vw;
+  --name-width: 19vw;
+  --name-font: 1.2vw;
+  --desc-left: 15vw;
+  --desc-top: 20vh;
+}
+
+/* name */
+/* div#bg-2-1, div#bg-2-4, div#bg-2-7, div#bg-2-10, div#bg-2-13 */
+div#parallex-bg-2 div.project-name {
+  left: var(--name-left);
+  width: var(--name-width);
+  font-size: var(--name-font);
+  text-align: center;
+}
+
+div#parallex-bg-2 div.project-name a:link, div#parallex-bg-2 div.project-name a:visited {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+/* img */
+/* div#bg-2-2, div#bg-2-5, div#bg-2-8, div#bg-2-11, div#bg-2-14 */
+div#parallex-bg-2 div.project-img {
+  left: var(--img-left);
+}
+
+div#parallex-bg-2 div.project-desc {
+  font-family: "Montserrat", sans-serif;
+  width: 23vw;
+  left: var(--desc-left);
+}
+
+div#parallex-bg-2 div.project-desc h3 {
+  text-align: center;
 }
 
 div#bg-2-1 {
-  top: 10%;
-  left: 45%;
-  width: 17%;
+  top: var(--name-top);
 }
-
 
 div#bg-2-2 {
-  top: var(--initial-offset);
-  left: var(--left-offset);
+  top: var(--img-top);
 }
 
-/* div#bg-2-2 {
-  top: calc(var(--initial-offset) + var(--default-screen-height));
-  left: var(--left-offset);
-} */
-
 div#bg-2-3 {
-  top: calc(var(--initial-offset) + calc(2 * var(--default-screen-height)));
-  left: var(--left-offset);
+  top: var(--desc-top);
 }
 
 div#bg-2-4 {
-  top: calc(var(--initial-offset) + calc(3 * var(--default-screen-height)));
-  left: var(--left-offset);
+  top: calc(var(--name-top) + 100vh);
 }
 
+div#bg-2-5 {
+  top: calc(var(--img-top) + 100vh);
+}
+
+div#bg-2-6 {
+  top: calc(var(--img-top) + 100vh);
+}
+
+div#bg-2-7 {
+  top: calc(var(--name-top) + 200vh);
+}
+
+div#bg-2-8 {
+  top: calc(var(--img-top) + 200vh);
+}
+
+div#bg-2-9 {
+  top: calc(var(--img-top) + 200vh);
+}
+
+div#bg-2-10 {
+  top: calc(var(--name-top) + 300vh);
+}
+
+div#bg-2-11 {
+  top: calc(var(--img-top) + 300vh);
+}
+
+div#bg-2-12 {
+  top: calc(var(--img-top) + 300vh);
+}
+
+div#bg-2-13 {
+  top: calc(var(--name-top) + 400vh);
+}
+
+div#bg-2-14 {
+  top: calc(var(--img-top) + 400vh);
+}
+
+div#bg-2-15 {
+  top: calc(var(--img-top) + 400vh);
+}
 
 div.project-name {
   font-family: "Montserrat", sans-serif;
 }
 
 div.project-img {
-  background-color: #ffffff;
   border-radius: 50%;
-  height: 50%;
-  /* width: 15vh; */
-  text-align: center;
-  
+  /* height: 50vh; */
+  /* text-align: center; */
 }
 
 div.project-img img {
-  height: 100%;
+  width: 38vw;
 } 

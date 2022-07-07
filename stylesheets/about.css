@@ -1,13 +1,67 @@
 body {
-  --roots-height: 343px;
-  --roots-width: 844px;
-  height: 1000px;
+  /* --roots-height: 343px;
+  --roots-width: 844px; */
+  --roots-width: calc(1.85 * 55.307vw);
+  --roots-height: calc(0.406398 * var(--roots-width));
+  --profile-width: 27vw;
+  height: var(--roots-height);
 }
 
 div#bg-1-1 {
   background: url("../media/roots.png");
-  top: 0px;
-  left: calc(600px - calc(var(--default-screen-width) / 2));
+  top: 0;
+  left: calc(50vw - var(--roots-width) / 2);
   height: var(--roots-height);
   width: var(--roots-width);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+div.profile img {
+  width: var(--profile-width);
+  border-radius: 5%;
+}
+
+div#bg-2-1 {
+  top: 10vw;
+  left: calc(50vw - var(--profile-width) / 2);
+}
+
+div.intro {
+  font-family: "Montserrat", sans-serif; 
+  width: 25vw;
+}
+
+div#bg-2-2 {
+  right: 5vw;
+}
+
+div#bg-2-3 {
+  top: 19vh;
+  left: 28vw;
+}
+
+div#bg-2-4 {
+  top: 7vh;
+  left: 28vw;
+}
+div.about-site {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+}
+
+div.about-site ul {
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+}
+
+div.about-site ul a {
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  color: black;
+}
+
+div#bg-2-5 {
+  bottom: 1vh;
+  left: 4vw;
 }

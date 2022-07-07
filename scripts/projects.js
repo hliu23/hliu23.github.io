@@ -1,24 +1,13 @@
-$(function() {
-  // startFrom("div#bg-1-2", 0);
-  // let projectNum = 4;
-  // let height = $(window).height();
-  // $(body).css("height", projectNum * height);
-
-  // render only at start
-})
-
-// let tl = gsap.timeline({
-//   scrollTrigger: {
-//     scrub: true,
-//     pin: true,
-//   }, 
-//   default: {
-
-//   }
-
-
-// });
-
-
-// fix things in css that relied on default
-
+let numProjects = 5;
+gsap.to(".parallex-bg", {
+  scrollTrigger: {
+    scrub: true,
+    snap: 1/(numProjects-1)
+  },
+  // y: (index, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+  y: (index, target) => {
+    // console.log(-ScrollTrigger.maxScroll(window));
+    return -ScrollTrigger.maxScroll(window) * target.dataset.speed;
+  },
+  ease: "none", 
+});

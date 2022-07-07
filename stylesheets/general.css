@@ -1,17 +1,16 @@
-:root {
-  --background-color: #FFF59F;
+/* :root {
   --default-screen-width: 1526px;
   --default-screen-height: 718px;
-}
+} */
 
 body {
-  background-color: var(--background-color);
+  background-color: #FFF59F;
 }
 
 div.parallex-bg {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   margin: -8px;
@@ -26,10 +25,7 @@ div#parallex-bg-1 {
 div#parallex-bg-2 {
   z-index: 2;
 }
-/* nav bar */
-div#parallex-bg-3 {
-  z-index: 3;
-}
+
 
 div.parallex-bg div {
   background-repeat: no-repeat;
@@ -39,29 +35,35 @@ div.parallex-bg div {
 }
 
 .nav-bar {
-  top: 10%;
-  left: 5%;
-  font-family: "Montserrat", sans-serif;
-  z-index: 10;
+  position: fixed;
+  z-index: 3;
+  top: 10vh;
+  left: 5vw;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-bar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-size: 1.4em;
+  font-size: 1.4vw;
 }
 
 .nav-bar ul li.active {
   font-weight: bold;
+  font-size: 2.3vw;
 }
 
 .nav-bar ul li a {
   display: block;
   text-decoration: none;
-  padding: 1px;
+  /* padding: 1px; */
 }
 
 .nav-bar ul li a:link, .nav-bar ul li a:visited {
   color: #000;
+}
+
+div.external-link a img {
+  width: 5vw;
 }
