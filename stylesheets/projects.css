@@ -22,7 +22,7 @@ div#parallex-bg-2 {
   --name-top: 9vh;
   --name-left: 44vw;
   --name-width: 19vw;
-  --name-font: 1.2vw;
+  --name-font: 3vh;
   --desc-left: 15vw;
   --desc-top: 20vh;
 }
@@ -38,7 +38,7 @@ div#parallex-bg-2 div.project-name {
 
 div#parallex-bg-2 div.project-name a:link, div#parallex-bg-2 div.project-name a:visited {
   display: block;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: #000;
 }
 
@@ -56,6 +56,11 @@ div#parallex-bg-2 div.project-desc {
 
 div#parallex-bg-2 div.project-desc h3 {
   text-align: center;
+  font-size: 3.5vh;
+}
+
+div#parallex-bg-2 div.project-desc ul {
+  font-size: 2.5vh;
 }
 
 div#bg-2-1 {
