@@ -7,7 +7,7 @@ body {
 }
 
 div#bg-1-1 {
-  background: url("../media/branch/branch-5.png");
+  background-image: url("../media/branch/branch-5.png");
   background-repeat: no-repeat;
   background-size: contain;
   top: 0;
@@ -21,7 +21,7 @@ div#parallex-bg-2 {
   --img-left: 60vw;
   --name-top: 9vh;
   --name-left: 44vw;
-  --name-width: 19vw;
+  --name-width: 21vw;
   --name-font: 3vh;
   --desc-left: 15vw;
   --desc-top: 20vh;
