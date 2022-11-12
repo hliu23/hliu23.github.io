@@ -1,4 +1,4 @@
-let numExp = 5;
+let numExp = 6;
 gsap.to(".parallex-bg", {
   scrollTrigger: {
     scrub: true,

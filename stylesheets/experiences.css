@@ -1,8 +1,8 @@
 body {
-  /* 
-  --trunk-width: 278px; */
   --trunk-width: 18.22vw;
-  --trunk-height: calc(var(--trunk-width) * 7.194244);
+  /* --trunk-height: calc(var(--trunk-width) * 7.194244); */
+  --trunk-height: calc(var(--trunk-width) * 8.70);
+
   --left-edge: calc(57vw - calc(var(--trunk-width) / 2));
   --right-edge: calc(57vw + calc(var(--trunk-width) / 2));
   height: var(--trunk-height);
@@ -81,4 +81,8 @@ div#bg-2-4 {
 
 div#bg-2-5 {
   top: calc(var(--initial) + calc(4 * var(--offset)));
+}
+
+div#bg-2-6 {
+  top: calc(var(--initial) + calc(5 * var(--offset)));
 }
