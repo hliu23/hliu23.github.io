@@ -1,0 +1,37 @@
+.background {
+  position: relative;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.leaf {
+  position: absolute;
+  background-color: #709255;
+  clip-path: polygon(50% 100%, 63% 89%, 70% 78%, 73% 66%, 73% 50%, 65% 27%, 50% 0, 35% 27%, 27% 50%, 27% 66%, 30% 78%, 37% 89%);
+  width: 15%;
+  height: 30%;
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+
+  .inner-leaf {
+    --percent: 78%;
+    position: absolute;
+    background-color: #95B46A;
+    clip-path: polygon(50% 100%, 63% 89%, 70% 78%, 73% 66%, 73% 50%, 65% 27%, 50% 0, 35% 27%, 27% 50%, 27% 66%, 30% 78%, 37% 89%);
+    bottom: 2%;
+    left: calc(50% - var(--percent) / 2);
+    width: var(--percent);
+    height: var(--percent);
+    z-index: 2;
+  }
+}
+
+
+
+.branch {
+  background-color: black;
+  width: 10%;
+  height: 100%;
+}
